@@ -2,15 +2,14 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: splitkb
-      url-base: https://github.com/splitkb
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: zmk-aurora-lily58
-      remote: splitkb
+      url: https://github.com/splitkb/zmk-aurora-lily58
       revision: main
   self:
     path: config
+# Force Cache Reset 1
